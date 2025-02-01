@@ -19,41 +19,57 @@ This project is a fully containerized **AI-enhanced static site generator** usin
 ## 📂 Folder Structure
 ```
 /my-ai-hugo-site
-│── /assets
-│   │── /css
-│   │   ├── main.css               # TailwindCSS main styles
-│── /content
-│   │── /en                        # English content
-│   │── /es                        # Spanish content
-│   │── /fr                        # French content
-│   │── /de                        # German content
-│   │── /blog                      # Blog posts (Markdown)
-│── /layouts
-│   │── /partials
-│   │   ├── head.html               # Includes Tailwind & Alpine.js
-│   │   ├── image.html              # Hugo Pipes Image Optimization
-│── /public                         # Hugo output directory (generated)
-│── /static
-│   │── /css
-│   │   ├── style.css               # Compiled TailwindCSS output
-│   │── /images
-│   │   ├── /uploads                # CMS Image Uploads
-│── /themes                         # Custom Hugo themes (optional)
-│── /scripts
-│   │── generate_content.py         # AI-powered blog post generator
-│   │── share_post.py               # Social media auto-sharing
-│── /docker                         # Docker configurations (optional)
-│── .github
-│   │── /workflows
-│   │   ├── deploy.yml              # CI/CD GitHub Actions
-│── config.yaml                      # PagesCMS configuration
-│── Dockerfile                        # Containerized setup
-│── docker-compose.yml                # Local development setup
-│── netlify.toml                      # Netlify settings (if using)
-│── cloudflare-pages.yml               # Cloudflare settings (if using)
-│── package.json                      # TailwindCSS & PostCSS configuration
-│── tailwind.config.js                 # TailwindCSS setup
-│── config.toml                        # Hugo configuration
+├── assets
+│   ├── css
+│   │   └── main.css
+│   └── js
+│       ├── alpine.js
+│       └── custom.js
+├── cloudflare-pages.yml
+├── config.toml
+├── config.yaml
+├── content
+│   ├── blog
+│   ├── de
+│   ├── en
+│   │   └── blog
+│   │       └── welcome.md
+│   ├── es
+│   └── fr
+├── docker-compose.yml
+├── Dockerfile
+├── layouts
+│   ├── _default
+│   │   ├── baseof.html
+│   │   ├── list.html
+│   │   ├── single.html
+│   │   └── taxonomy.html
+│   ├── partials
+│   │   ├── darkmode.html
+│   │   ├── head.html
+│   │   ├── image.html
+│   │   ├── langswitcher.html
+│   │   ├── meta.html
+│   │   └── scripts.html
+│   └── shortcodes
+│       └── ai_content.html
+├── netlify.toml
+├── package.json
+├── public
+├── README.md
+├── resources
+│   └── _gen
+│       ├── assets
+│       └── images
+├── scripts
+│   ├── generate_content.py
+│   └── share_post.py
+├── static
+│   ├── css
+│   └── images
+│       └── uploads
+├── tailwind.config.js
+└── themes
 ```
 
 ---
