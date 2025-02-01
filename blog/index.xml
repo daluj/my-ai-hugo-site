@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on My AI Hugo Site (EN)</title><link>http://localhost:1313/blog/</link><description>Recent content in Blogs on My AI Hugo Site (EN)</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Jan 2024 12:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to Hugo</title><link>http://localhost:1313/blog/welcome-to-hugo/</link><pubDate>Mon, 01 Jan 2024 12:00:00 +0000</pubDate><guid>http://localhost:1313/blog/welcome-to-hugo/</guid><description>&lt;h1 id="welcome-to-your-new-hugo-site">Welcome to Your New Hugo Site&lt;/h1>
+&lt;p>This is an example blog post to ensure Hugo is serving content correctly. You can edit or remove this file to add your own content.&lt;/p>
+&lt;ul>
+&lt;li>Supports &lt;strong>Markdown&lt;/strong>&lt;/li>
+&lt;li>Multilingual Support Included (EN, ES, FR, DE)&lt;/li>
+&lt;li>AI-Powered Content Generation Coming Soon!&lt;/li>
+&lt;/ul>
+&lt;p>Enjoy building with Hugo! 🚀&lt;/p></description></item></channel></rss>
