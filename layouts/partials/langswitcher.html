@@ -1,0 +1,5 @@
+<div class="flex space-x-2">
+    {{ range .Site.Languages }}
+      <a href="{{ .Lang }}/" class="px-2 py-1 border rounded">{{ .LanguageName }}</a>
+    {{ end }}
+  </div>
