@@ -1,0 +1,12 @@
+{
+    "name": "hugo-tailwind",
+    "version": "1.0.0",
+    "scripts": {
+      "build:css": "tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --minify"
+    },
+    "devDependencies": {
+      "tailwindcss": "^3.0.0",
+      "autoprefixer": "^10.4.0",
+      "postcss": "^8.4.0"
+    }
+}

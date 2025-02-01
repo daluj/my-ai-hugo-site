@@ -1,0 +1,10 @@
+<meta name="description" content="{{ .Summary }}">
+<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Summary }}">
+<meta property="og:image" content="{{ .Params.image | absURL }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Summary }}">
+<meta name="twitter:image" content="{{ .Params.image | absURL }}">

@@ -1,0 +1,2 @@
+{{ $image := resources.Get .src | images.Resize "800x" | images.Optimize }}
+<img src="{{ $image.RelPermalink }}" alt="{{ .alt }}" class="responsive-image" loading="lazy">

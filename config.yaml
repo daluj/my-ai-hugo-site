@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Language", name: "language", widget: "select", options: ["en", "es", "fr", "de"] }
+
+# i18n Multilingual Support Configuration
+[Languages]
+  [Languages.en]
+    languageCode = "en"
+    contentDir = "content/en"
+  [Languages.es]
+    languageCode = "es"
+    contentDir = "content/es"
+  [Languages.fr]
+    languageCode = "fr"
+    contentDir = "content/fr"
+  [Languages.de]
+    languageCode = "de"
+    contentDir = "content/de"

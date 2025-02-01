@@ -1,0 +1,80 @@
+baseURL = "https://your-site.com/"
+languageCode = "en-us"
+title = "My AI-Powered Hugo Site"
+theme = "your-theme-name"  # Change if using a custom theme
+paginate = 10
+enableRobotsTXT = true
+enableGitInfo = true
+
+# Multilingual Support
+defaultContentLanguage = "en"
+[languages]
+  [languages.en]
+    languageCode = "en"
+    contentDir = "content/en"
+    title = "My AI Hugo Site (EN)"
+    weight = 1
+  [languages.es]
+    languageCode = "es"
+    contentDir = "content/es"
+    title = "Mi Sitio Hugo con AI (ES)"
+    weight = 2
+  [languages.fr]
+    languageCode = "fr"
+    contentDir = "content/fr"
+    title = "Mon Site Hugo avec AI (FR)"
+    weight = 3
+  [languages.de]
+    languageCode = "de"
+    contentDir = "content/de"
+    title = "Meine AI Hugo Seite (DE)"
+    weight = 4
+
+# Hugo Outputs
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Hugo Pipes: Minify CSS & JS
+[minify]
+  minifyOutput = true
+
+# Deployment Configuration
+[deployment]
+  [[deployment.targets]]
+    name = "production"
+    URL = "s3://my-bucket-name?region=us-east-1"
+    cloudFrontDistributionID = "E1234567890ABC"
+
+# Image Processing
+[imaging]
+  quality = 75
+  anchor = "center"
+
+# Sitemap & SEO
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Markup Configuration (Markdown Processing)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    style = "dracula"
+
+# Permalinks
+[permalinks]
+  blog = "/blog/:slug/"
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Build Configuration
+[build]
+  writeStats = true
