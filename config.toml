@@ -1,10 +1,7 @@
-baseURL = "https://your-site.com/"
-languageCode = "en-us"
+baseURL = "http://localhost:1313"
 title = "My AI-Powered Hugo Site"
-# theme = "your-theme-name"  # Change if using a custom theme
-# paginate = 10
+languageCode = "en-us"
 enableRobotsTXT = true
-enableGitInfo = true
 
 # Multilingual Support
 defaultContentLanguage = "en"
@@ -30,31 +27,16 @@ defaultContentLanguage = "en"
     title = "Meine AI Hugo Seite (DE)"
     weight = 4
 
-# Hugo Outputs
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-# Hugo Pipes: Minify CSS & JS
-[minify]
-  minifyOutput = true
-
-# Deployment Configuration
-[deployment]
-  [[deployment.targets]]
-    name = "production"
-    URL = "s3://my-bucket-name?region=us-east-1"
-    cloudFrontDistributionID = "E1234567890ABC"
-
-# Image Processing
-[imaging]
-  quality = 75
-  anchor = "center"
-
 # Sitemap & SEO
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5
+
+# Image Processing
+[imaging]
+  quality = 75
+  anchor = "center"
 
 # Markup Configuration (Markdown Processing)
 [markup]
@@ -74,7 +56,3 @@ defaultContentLanguage = "en"
 [taxonomies]
   category = "categories"
   tag = "tags"
-
-# Build Configuration
-[build]
-  writeStats = true

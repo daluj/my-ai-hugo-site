@@ -90,6 +90,19 @@ Then, open `http://localhost:1313` in your browser.
 
 ---
 
+## Fill the public folder
+
+Enter the Hugo container. Open a shell inside the Hugo container:
+```sh
+docker exec -it hugo_dev /bin/sh
+```
+Once inside the container run:
+```sh
+hugo --minify
+```
+
+---
+
 ## 🔄 AI Content Generation
 Generate an AI-powered blog post:
 ```sh
