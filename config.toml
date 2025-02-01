@@ -56,6 +56,3 @@ defaultContentLanguage = "en"
 [taxonomies]
   category = "categories"
   tag = "tags"
-
-relativeURLs = true
-uglyURLs = false

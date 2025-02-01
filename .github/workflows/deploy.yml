@@ -36,8 +36,8 @@ jobs:
           npm install
           npm run build:css
 
-      - name: Build site
-        run: hugo --minify
+      - name: Build site with Hugo
+        run: hugo --minify --baseURL "https://daluj.github.io/my-ai-hugo-site/"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
