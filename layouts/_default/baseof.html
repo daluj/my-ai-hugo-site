@@ -10,7 +10,7 @@
 <body x-data="{ darkMode: localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) }" :class="{ 'dark': darkMode }" class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
   <header class="p-4 bg-white dark:bg-gray-800 shadow-md">
     <nav class="container mx-auto flex justify-between">
-      <a href="/" class="text-xl font-bold">Hugo AI Site</a>
+      <a href="{{ .Site.BaseURL | relURL }}" class="text-xl font-bold">Hugo AI Site</a>
       {{ partial "langswitcher.html" . }}
       <div>
         <button @click="darkMode = !darkMode; localStorage.setItem('theme', darkMode ? 'dark' : 'light');" class="px-4 py-2 bg-blue-600 text-white rounded">Toggle Dark Mode</button>
