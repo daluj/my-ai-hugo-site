@@ -33,6 +33,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-      - name: Share new post on X
-        run: |
-          python scripts/share_post.py "${{ env.POST_TITLE }}" "${{ env.POST_URL }}"
+#      - name: Share new post on X
+#        run: |
+#          python scripts/share_post.py "${{ env.POST_TITLE }}" "${{ env.POST_URL }}"

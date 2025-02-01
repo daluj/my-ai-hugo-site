@@ -1,0 +1,5 @@
+{{ $alpine := resources.Get "js/alpine.js" | minify | fingerprint }}
+{{ $customJS := resources.Get "js/custom.js" | minify | fingerprint }}
+
+<script defer src="{{ $alpine.RelPermalink }}"></script>
+<script defer src="{{ $customJS.RelPermalink }}"></script>

@@ -1,7 +1,7 @@
 baseURL = "https://your-site.com/"
 languageCode = "en-us"
 title = "My AI-Powered Hugo Site"
-theme = "your-theme-name"  # Change if using a custom theme
+# theme = "your-theme-name"  # Change if using a custom theme
 # paginate = 10
 enableRobotsTXT = true
 enableGitInfo = true
