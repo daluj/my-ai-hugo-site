@@ -9,7 +9,7 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write  # Allow push access to gh-pages
   pages: write
   id-token: write
 
@@ -42,8 +42,9 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Ensure correct token
           publish_dir: ./public
+          publish_branch: gh-pages  # Explicitly set branch
 #      - name: Share new post on X
 #        run: |
 #          python scripts/share_post.py "${{ env.POST_TITLE }}" "${{ env.POST_URL }}"
